@@ -4,3 +4,16 @@ crystal:
   name: Crystal Example
   email: crystal@example.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+
+antrea:
+  name: Antrea Examples
+  email: antrea@example.gov
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name: <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest("password") %>
+<% end %>
