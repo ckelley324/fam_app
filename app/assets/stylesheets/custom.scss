@@ -45,12 +45,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 2.2em;
     letter-spacing: -1px;
     margin-bottom: 30px;
     text-align: center;
     font-weight: normal;
-    color: rgb(148, 12, 182);
+    color: rgb(34, 37, 218);
 }
 
 p {
@@ -71,7 +71,7 @@ p {
     font-weight: bold;
     font-family: 'Permanent Marker', cursive;
     &:hover {
-        color: green;
+        color: rgba(28, 114, 194, 0.877);
         text-decoration: none;
     }
 }
@@ -82,9 +82,9 @@ footer {
     margin-top: 45px;
     padding-top: 5px;
     border-top: 1px solid #eaeaea;
-    color: #777;
+    color: rgb(10, 139, 111);
     a {
-        color: #555;
+        color: rgb(10, 139, 111);
         &:hover {
             color: #222;
         }
@@ -180,6 +180,14 @@ input {
     span {
         margin-left: 20px;
         font-weight: normal;
+    }
+}
+
+.btn-primary {
+    background-color: rgb(81, 10, 139);
+    border: 1px solid black;
+    &:hover {
+        background-color: rgb(10, 139, 111);
     }
 }
 
