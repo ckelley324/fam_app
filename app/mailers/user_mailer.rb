@@ -21,4 +21,9 @@ class UserMailer < ApplicationMailer
     @greeting = "Hi " + user.name
     mail to: user.email, subject: "F@M Password Reset"
   end
+
+  def new_user(user)
+    @user = user
+    mail to: "crystal@famsocial.me", subject: "New F@M User"
+  end
 end

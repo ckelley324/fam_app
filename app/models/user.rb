@@ -70,6 +70,11 @@ class User < ApplicationRecord
         reset_sent_at < 2.hours.ago
     end
 
+    # Send email to admin
+    def send_new_user_email
+        UserMailer.new_user(self).deliver_now
+    end
+
     # Defines a proto-feed
     def feed
         following_ids = "SELECT followed_id FROM relationships WHERE follower_id = :user_id"
