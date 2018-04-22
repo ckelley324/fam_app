@@ -1,5 +1,19 @@
 <% provide(:title, 'All Users') %>
-<h1>All Users</h1>
+<h1>All Users (<%= @users.count %>)</h1>
+
+<%= form_tag(users_path, :method => "get", id: "search") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
+
+<% if @results.present? && params[:search].present? %>
+    <% @results.each do |user| %>
+        <ul><li><%= gravatar_for user, size: 30 %> <%= link_to user.name, user %></li></ul>
+    <% end %>
+<% elsif @results.blank? && params[:search].present? %>
+    <h4>No results returned.</h4>
+<% end %>
+
 
 <%= will_paginate %>
 

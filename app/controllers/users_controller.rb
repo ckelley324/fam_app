@@ -5,6 +5,9 @@ class UsersController < ApplicationController
 
   def index
     @users = User.paginate(page: params[:page])
+    if params[:search]
+      @results = User.search(params[:search]).order("created_at DESC")
+    end
   end
 
   def new
