@@ -24,6 +24,6 @@ class UserMailer < ApplicationMailer
 
   def new_user(user)
     @user = user
-    mail to: "crystal@famsocial.me", subject: "New F@M User"
+    mail to: "crystalk@famsocial.me", subject: "New F@M User"
   end
 end
