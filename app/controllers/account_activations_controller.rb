@@ -6,7 +6,7 @@ class AccountActivationsController < ApplicationController
             user.activate
             log_in user
             flash[:success] = "Account activated!"
-            admin.send_new_user_email
+            send_new_user_email
             redirect_to user
         else
             flash[:danger] = "Invalid activation link"
