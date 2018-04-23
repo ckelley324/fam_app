@@ -12,9 +12,4 @@ class ApplicationController < ActionController::Base
         redirect_to login_url
       end
     end
-
-    # Send email to admin
-    def send_new_user_email
-        UserMailer.new_user(self).deliver_now
-    end
 end
