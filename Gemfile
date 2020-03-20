@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.6.3"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -22,6 +23,7 @@ gem "excon", ">= 0.71.0"
 gem "nokogiri", ">= 1.10.8"
 gem "rack", ">= 2.0.8"
 gem "loofah", ">= 2.3.1"
+gem "rubyzip", ">= 1.3.0"
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
