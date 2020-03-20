@@ -7,16 +7,21 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.5'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'rails', '>= 5.2.3'
+gem 'bootstrap-sass', '>= 3.4.1'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '>= 3.12.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem "rake", ">= 12.3.3"
+gem "excon", ">= 0.71.0"
+gem "nokogiri", ">= 1.10.8"
+gem "rack", ">= 2.0.8"
+gem "loofah", ">= 2.3.1"
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -31,11 +36,12 @@ gem 'bcrypt', '~> 3.1.11'
 gem 'jquery-rails', '~> 4.1.1'
 gem 'faker', '~> 1.6.3'
 gem 'carrierwave', '~> 0.11.2'
-gem 'mini_magick', '~> 4.5.1'
+gem 'mini_magick', '>= 4.9.4'
 gem 'fog', '~> 1.38.0'
 gem 'will_paginate', '~> 3.0.0'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 # gem 'sendgrid-ruby'
+gem "actionview", ">= 5.2.4.2"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
